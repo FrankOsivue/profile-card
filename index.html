@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <article data-testid="test-profile-card" class="profile-card">
+        <figure>
+            <img src="./mark.jpg" alt="User avatar" data-testid="test-user-avatar" />
+        </figure>
+
+        <header>
+            <h2 data-testid="test-user-name">Mark Francis</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+            Passionate programmer and tech enthusiast. Always learning, building, and improving.
+        </p>
+
+        <p>
+            Current time in milliseconds:
+            <span data-testid="test-user-time" id="time"></span>
+        </p>
+
+
+
+        <section data-testid="test-user-hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Coding</li>
+                <li>Music</li>
+                <li>Football</li>
+            </ul>
+        </section>
+
+        <section data-testid="test-user-dislikes">
+            <h3>Dislikes</h3>
+            <ul>
+                <li>Procrastination</li>
+                <li>Negativity</li>
+            </ul>
+        </section>
+
+        <nav data-testid="test-user-social-links">
+            <ul>
+                <li><a href="https://twitter.com" data-testid="test-user-social-twitter" target="_blank"
+                        rel="noopener noreferrer">Twitter</a></li>
+                <li><a href="https://github.com" data-testid="test-user-social-github" target="_blank"
+                        rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://linkedin.com" data-testid="test-user-social-linkedin" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </article>
+
+    <script src="script.js">
+
+
+    </script>
+
+</body>
+
+</html>

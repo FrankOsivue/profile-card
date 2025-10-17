@@ -1,0 +1,87 @@
+/* Base Styles (Mobile First) */
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.profile-card {
+  background: white;
+  max-width: 400px;
+  width: 90%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+figure {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+figure img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+header h2 {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+/* Responsive Layout for Larger Screens */
+@media (min-width: 700px) {
+  .profile-card {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: start;
+    max-width: 800px;
+  }
+
+  figure {
+    grid-row: span 6;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  figure img {
+    width: 160px;
+    height: 160px;
+  }
+
+  header h2 {
+    text-align: left;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+  }
+}
