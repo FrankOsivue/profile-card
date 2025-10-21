@@ -6,63 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Card</title>
     <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap' rel='stylesheet'>
 </head>
 
 <body>
 
     <article data-testid="test-profile-card" class="profile-card">
-        <figure>
+
+        <figure class="profile">
             <img src="./mark.jpg" alt="User avatar" data-testid="test-user-avatar" />
         </figure>
 
-        <header>
-            <h2 data-testid="test-user-name">Mark Francis</h2>
-        </header>
-
+        <h2 data-testid="test-user-name">Mark Francis</h2>
         <p data-testid="test-user-bio">
-            Passionate programmer and tech enthusiast. Always learning, building, and improving.
+            Frontend developer that knows how to convert designs into pixel perfect websites
         </p>
 
-        <p>
-            Current time in milliseconds:
-            <span data-testid="test-user-time" id="time"></span>
-        </p>
+        <nav class="section" data-testid="test-user-social-links">
+            <h3>Socials</h3>
+            <ul class="socials-icons">
+                <li><a href="https://twitter.com" data-testid="test-user-social-twitter" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://github.com/frankosivue" data-testid="test-user-social-github" target="_blank"
+                        rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://linkedin.com" data-testid="test-user-social-linkedin" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </nav>
 
 
 
-        <section data-testid="test-user-hobbies">
+        <section class="section" data-testid="test-user-hobbies">
             <h3>Hobbies</h3>
-            <ul>
+            <ul class="likes-hobbies-styles">
                 <li>Coding</li>
                 <li>Music</li>
                 <li>Football</li>
             </ul>
         </section>
 
-        <section data-testid="test-user-dislikes">
+        <section class="section" data-testid="test-user-dislikes">
             <h3>Dislikes</h3>
-            <ul>
+            <ul class="likes-hobbies-styles">
                 <li>Procrastination</li>
                 <li>Negativity</li>
             </ul>
         </section>
 
-        <nav data-testid="test-user-social-links">
-            <ul>
-                <li><a href="https://twitter.com" data-testid="test-user-social-twitter" target="_blank"
-                        rel="noopener noreferrer">Twitter</a></li>
-                <li><a href="https://github.com" data-testid="test-user-social-github" target="_blank"
-                        rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://linkedin.com" data-testid="test-user-social-linkedin" target="_blank"
-                        rel="noopener noreferrer">LinkedIn</a></li>
-            </ul>
-        </nav>
+        <section class="buttons">
+            <a href="contact.html" class="btn">Contact</a>
+            <a href="about.html" class="btn">About Me</a>
+        </section>
+
+        <p>
+            Current time:
+            <span data-testid="test-user-time" id="time"></span>
+        </p>
+
+
+
+
     </article>
 
-    <script src="script.js">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a2e0e6d6b3.js" crossorigin="anonymous"></script>
 
-
-    </script>
 
 </body>
 
