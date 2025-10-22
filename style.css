@@ -10,16 +10,17 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: linear-gradient(to bottom right, #f6b26b, #fdd5a1);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  line-height: 1.6rem;
 }
 
-.profile-card {
+article {
   background: var(--card-bg);
   border-radius: var(--radius);
   padding: 2rem;
@@ -27,7 +28,6 @@ body {
   max-width: 400px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  
 }
 
 .profile img {
@@ -49,17 +49,14 @@ p {
   line-height: 1.4;
 }
 
-.section{
+.section {
   margin-top: 1.5rem;
 }
 
 h3 {
   color: var(--accent);
-  margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
-
-
 
 nav ul {
   display: flex;
@@ -75,11 +72,11 @@ nav a {
   background: #f3f3f3;
   padding: 10px;
   border-radius: 50%;
-  transition: 0.3s
+  transition: 0.3s;
 }
 
 nav a:hover {
-  background: #e6e6e6
+  background: #e6e6e6;
 }
 
 section ul {
@@ -87,7 +84,7 @@ section ul {
   padding-left: 1.5rem;
 }
 
-.likes-hobbies-styles{
+.likes-hobbies-styles {
   display: flex;
   justify-content: center;
   column-gap: 4px;
@@ -104,31 +101,101 @@ section ul {
   font-weight: 500;
 }
 
-/* Responsive Layout for Larger Screens 
-@media (min-width: 700px) {
-  .profile-card {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    align-items: start;
-    max-width: 800px;
-  }
+/* styling for my contact page */
+.contact-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
 
-  figure {
-    grid-row: span 6;
-    justify-content: flex-start;
-    margin: 0;
-  }
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  figure img {
-    width: 160px;
-    height: 160px;
-  }
+h2 {
+  color: #222;
+  margin-bottom: 5px;
+}
 
-  header h2 {
-    text-align: left;
-  }
+.intro {
+  color: #555;
+  font-size: 0.95rem;
+}
 
-  nav ul {
-    justify-content: flex-start;
-  }
+form {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #656f74;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #222;
+}
+
+.error {
+  color: #d93025;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  display: block;
+  min-height: 16px;
+}
+
+.success-msg {
+  text-align: center;
+  color: green;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }

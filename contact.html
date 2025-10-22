@@ -9,12 +9,60 @@
 </head>
 
 <body>
-    <article class="profile-card">
-        <h2>Mark Francis</h2>
+    <main class="contact-container">
+        <article class="contact-card" data-testid="test-profile-contact">
+            <header>
+                <h2>Contact Me</h2>
+                <p class="intro">Have a question or want to collaborate? Send me a message below.</p>
+            </header>
 
-    </article>
+            <form id="contactForm" novalidate>
+                <fieldset>
+                    <legend class="visually-hidden">Contact form</legend>
 
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" aria-describedby="error-name"
+                            data-testid="test-contact-name" required>
+                        <small id="error-name" class="error" data-testid="test-contact-error-name"></small>
+                    </div>
 
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" aria-describedby="error-email"
+                            data-testid="test-contact-email" required>
+                        <small id="error-email" class="error" data-testid="test-contact-error-email"></small>
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" aria-describedby="error-subject"
+                            data-testid="test-contact-subject" required>
+                        <small id="error-subject" class="error" data-testid="test-contact-error-subject"></small>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" minlength="10" aria-describedby="error-message"
+                            data-testid="test-contact-message" required></textarea>
+                        <small id="error-message" class="error" data-testid="test-contact-error-message"></small>
+                    </div>
+
+                    <button type="submit" data-testid="test-contact-submit">Send Message</button>
+
+                    <p id="successMsg" data-testid="test-contact-success" class="success-msg" hidden>
+                        Your message has been sent successfully!
+                    </p>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
